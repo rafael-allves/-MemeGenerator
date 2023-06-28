@@ -23,9 +23,10 @@ export default function Meme(){
 
     function getMemeText(evt){
         setMeme((prevState) => {
+            const {id, value} = evt.target;
             return {
                 ...prevState,
-                [evt.target.id]: evt.target.value,
+                [id]: value,
             };
         })
     }
