@@ -1,0 +1,47 @@
+.root-header{
+    width: 100%;
+    height: 6.5rem;
+    
+    background: linear-gradient(90deg, #672280 1.18%, #A626D3 100%);
+
+    display: flex;
+}
+
+.root-header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+
+    padding: 0 3.7rem 0 1.6rem;
+
+    color: #fff;
+}
+
+.root-header nav div:nth-child(1){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.root-header nav div:nth-child(1) img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.root-header nav div:nth-child(1) h1{
+    font-family: 'Karla', sans-serif;
+
+    font-weight: 700;
+    font-size: 2rem;
+    letter-spacing: -0.1em;
+}
+
+.root-header nav div:nth-child(2) p{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
