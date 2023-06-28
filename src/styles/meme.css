@@ -53,14 +53,26 @@ main{
 .topText,
 .bottomText{
     position: absolute;
-    z-index: 1;
-
-    font-size: 3rem;
-    text-shadow: 1px 1px 0 #000;
-    text-transform: uppercase;
     
-    color: #fff;
-
+    margin: 15px 0;
+    padding: 0 5px;
+    
+    color: white;
+    
+    font-family: impact, sans-serif;
+    font-size: clamp(2rem, 3vw, 3rem);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
 }
 
 .topText{
