@@ -22,12 +22,10 @@ export default function Meme(){
     }
 
     function getMemeText(evt){
-        const text = evt.target.getAttribute('id');
-        const inputText = evt.target.value;
         setMeme((prevState) => {
-            prevState[text] = inputText
             return {
-                ...prevState
+                ...prevState,
+                [evt.target.id]: evt.target.value,
             };
         })
     }
@@ -41,12 +39,14 @@ export default function Meme(){
                 placeholder="Top text"
                 id='topText'
                 onInput={getMemeText}
+                value={meme.topText}
                 />
                 <input 
                 type="text"
                 placeholder="Bottom text"
                 id='bottomText'
                 onInput={getMemeText}
+                value={meme.bottomText}
                 />
                 <button onClick={getMemeImage}>
                     Get a new meme image
